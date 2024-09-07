@@ -1,4 +1,4 @@
-package Aagotnes.demo.domain;
+package Morten.Aagotnes.demo.domain;
 
 public class User {
     private String username;

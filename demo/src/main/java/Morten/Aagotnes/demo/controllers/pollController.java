@@ -1,6 +1,6 @@
 package Morten.Aagotnes.demo.controllers;
 
-import Aagotnes.demo.domain.Poll;
+import Morten.Aagotnes.demo.domain.Poll;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
