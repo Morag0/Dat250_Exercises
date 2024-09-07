@@ -1,4 +1,4 @@
-package Aagotnes.demo.controllers;
+package Morten.Aagotnes.demo.controllers;
 
 import Aagotnes.demo.domain.Vote;
 import org.springframework.web.bind.annotation.*;

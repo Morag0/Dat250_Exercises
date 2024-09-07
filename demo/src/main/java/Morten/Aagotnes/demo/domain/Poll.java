@@ -8,7 +8,18 @@ public class Poll {
     private Instant publishedAt;
     private Instant validUntil;
 
+    private int id;
+
+
     public Poll() {}
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getQuestion() {
         return question;

@@ -5,9 +5,18 @@ public class VoteOption {
     private String caption;
     private int presentationOrder;
 
+    public int id;
+
 
     public VoteOption() {}
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getCaption() {
         return caption;
