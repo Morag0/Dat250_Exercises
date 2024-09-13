@@ -7,13 +7,12 @@ public class Poll {
     private String question;
     private Instant publishedAt;
     private Instant validUntil;
-
     private int id;
-
+    private List<VoteOption> options;  // New field to store the poll options
 
     public Poll() {}
 
-    public int getId(){
+    public int getId() {
         return id;
     }
 
@@ -25,23 +24,31 @@ public class Poll {
         return question;
     }
 
-    public Instant getPublishedAt() {
-        return publishedAt;
-    }
-
-    public Instant getValidUntil() {
-        return validUntil;
-    }
-
     public void setQuestion(String question) {
         this.question = question;
+    }
+
+    public Instant getPublishedAt() {
+        return publishedAt;
     }
 
     public void setPublishedAt(Instant publishedAt) {
         this.publishedAt = publishedAt;
     }
 
+    public Instant getValidUntil() {
+        return validUntil;
+    }
+
     public void setValidUntil(Instant validUntil) {
         this.validUntil = validUntil;
+    }
+
+    public List<VoteOption> getOptions() {
+        return options;
+    }
+
+    public void setOptions(List<VoteOption> options) {
+        this.options = options;
     }
 }

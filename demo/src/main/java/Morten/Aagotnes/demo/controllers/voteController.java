@@ -8,6 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/votes")
+@CrossOrigin(origins = "http://localhost:5173")
 public class VoteController {
 
     private final List<Vote> votes = new ArrayList<>();

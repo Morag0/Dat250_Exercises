@@ -4,9 +4,8 @@ public class VoteOption {
 
     private String caption;
     private int presentationOrder;
-
-    public int id;
-
+    private int id;
+    private int votes;  // New field to store the number of votes
 
     public VoteOption() {}
 
@@ -22,17 +21,23 @@ public class VoteOption {
         return caption;
     }
 
-    public int getPresentationOrder() {
-        return presentationOrder;
-    }
-
-
     public void setCaption(String caption) {
         this.caption = caption;
+    }
+
+    public int getPresentationOrder() {
+        return presentationOrder;
     }
 
     public void setPresentationOrder(int presentationOrder) {
         this.presentationOrder = presentationOrder;
     }
 
+    public int getVotes() {
+        return votes;
+    }
+
+    public void setVotes(int votes) {
+        this.votes = votes;
+    }
 }

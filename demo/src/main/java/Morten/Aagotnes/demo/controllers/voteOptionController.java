@@ -9,6 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 @RestController
 @RequestMapping("/voteOptions")
+@CrossOrigin(origins = "http://localhost:5173")
 public class VoteOptionController {
 
     private final List<VoteOption> voteOptions = new ArrayList<>();
